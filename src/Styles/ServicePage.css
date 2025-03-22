@@ -1,0 +1,114 @@
+:root{
+    --font-family: "Pathway Extreme", "Sans-serif";
+    --width: 100%;
+    --max-width: 1200px;
+}
+
+.service-container-1, .service-container-2, .service-container-3, .service-container-4{
+    width: var(--width);
+    max-width: var(--max-width);
+    height: auto;
+}
+ 
+.bg-sevice-img{
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.6s ease-in-out;
+}
+.bg-sevice-img:hover{
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+.service-btn{
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #297299;
+    background: transparent;
+    border: 2px solid #4082a3;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.5s ease;
+    z-index: 2;
+}
+
+.service-btn::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    background: #0077b6 !important;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    color: #fff;
+    transition: width 500ms ease;
+}
+
+.service-btn:hover::before {
+   width: 100%;
+}
+
+.service-btn:hover {
+    color: #fff;
+}
+.key-benefit-card {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: all 0.5s ease-in-out;
+}
+.key-benefit-card:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.service-container-4{
+    background-color: #f7f7fa;
+}
+
+.custom-col{
+    height: 250px;
+    padding: 30px;
+    border: 10px solid #fff;
+    position: relative;
+}
+
+.service-info-img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1 !important;
+    object-fit: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.serviceinfo-effect{
+    height: 120px;
+    position: relative;
+    margin: 28px auto;
+    z-index: 2;
+    background: rgba(210, 204, 229, 0.8);
+    transition: all 0.5s ease-in-out;
+}
+.custom-color-h4, .custom-color-p {
+    color: #4f772d;
+}
+.custom-color-p{
+    transform: translateY(50px);
+    transition: transform 0.6s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.custom-col:hover .custom-color-p{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.custom-col:hover .serviceinfo-effect{
+    margin-bottom: 10px !important;
+    z-index: 10;
+    background: rgba(233, 226, 226, 1);
+    cursor: pointer;
+}
