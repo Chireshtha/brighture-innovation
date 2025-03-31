@@ -1,0 +1,310 @@
+ :root {
+     --font-family: "Pathway Extreme", "Sans-serif";
+     --width: 100%;
+     --max-width: 1200px;
+ }
+.main-container{
+    font-family: var(--font-family);
+     width: var(--width);
+     height: auto;
+     background-color: #F0F1F2;
+}
+ .career-container {
+     font-family: var(--font-family);
+     width: var(--width);
+     position: relative;
+     height: 38rem;
+ }
+
+ .career-bg-img {
+     width: var(--width);
+     height: 38rem;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 0;
+ }
+
+ .career-bg-overlay {
+     background: linear-gradient(rgba(55, 100, 205, 0.7),rgba(58, 128, 198, 0.7),rgba(82, 145, 212, 0.7),rgba(71, 110, 194, 0.7),rgba(74, 114, 207, 0.7), rgba(20, 80, 219, 0.7));
+      width: var(--width);
+     height: 38rem;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 1;
+ }
+
+ .career-content {
+     position: relative;
+     margin: 100px 200px;
+     z-index: 2;
+     text-align: center;
+     max-width: var(--max-width);
+     padding: 50px;
+ }
+ .cn1{
+    color: #379e08;
+ }
+
+ .career-content-c1 {
+     font-family: cursive;
+     font-size: 70px;
+     text-shadow: grey -4px -5px 5px;
+ }
+
+ .career-content-t1 {
+     color: #f85e00;
+     font-family: cursive;
+     font-size: 50px;
+     text-shadow: grey -2px -3px 2.5px;
+ }
+
+ .career-content-t2 {
+     color: #413535;
+     font-family: cursive;
+     font-size: 50px;
+     text-shadow: grey -2px -3px 2.5px;
+ }
+
+ .career-content-t3 {
+      color: #ff3562;
+     font-family: cursive;
+     font-size: 50px;
+     text-shadow: grey -2px -3px 2.5px;
+ }
+
+ .career-content-desc {
+     margin-top: 120px;
+     font-size: 18px;
+     text-align: center;
+     padding: 20px;
+     font-family: cursive;
+ }
+
+ .career-bg-img1,
+ .career-bg-img2,
+ .career-bg-img3,
+ .career-bg-img4,
+ .career-bg-img5,
+ .career-bg-img6,
+ .career-bg-img7,
+ .career-bg-img8 {
+     width: 100px;
+     height: 100px;
+     position: absolute;
+     z-index: 1;
+ }
+
+ .career-bg-img1 {
+     top: 50px;
+     left: 5%;
+     animation: floatAnimation1 5s ease-out infinite;
+ }
+
+ .career-bg-img2 {
+     top: 50px;
+     right: 5%;
+     animation: floatAnimation2 5s ease-out infinite;
+ }
+
+ .career-bg-img3 {
+     top: 130px;
+     left: 40%;
+     animation: floatAnimation3 5s ease-out infinite;
+ }
+
+ .career-bg-img4 {
+     top: 300px;
+     left: 80%;
+     animation: floatAnimation4 5s ease-out infinite;
+ }
+
+ .career-bg-img5 {
+     top: 200px;
+     left: 70%;
+     animation: floatAnimation5 5s ease-out infinite;
+ }
+
+ .career-bg-img6 {
+     top: 250px;
+     left: 20%;
+     animation: floatAnimation6 5s ease-out infinite;
+ }
+
+ .career-bg-img7 {
+     top: 350px;
+     left: 50%;
+     animation: floatAnimation7 5s ease-out infinite;   
+ }
+ .career-bg-img8 {
+    top: 100px;
+    left: 50px;
+    width: 100px;
+    animation: floatAnimation8 40s linear infinite;  
+ }
+ .career-job{
+    font-family: 'ProximaNova-Regular', Arial, Helvetica, sans-serif;
+    width: 80% !important;
+  }
+
+ .btn-bg-color{
+    background-color: #00205B !important;
+    color: #FFFFFF !important;
+ }
+ @keyframes floatAnimation1 {
+     0% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+     25%{
+        transform: translate(0px, -10px) rotate(2deg)
+     }
+
+     50% {
+         transform: translate(0px, -20px) rotate(3deg)
+     }
+     75%{
+        transform: translate(0px, -10px) rotate(2deg)
+     }
+
+     100% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+ }
+
+ @keyframes floatAnimation2 {
+     0% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+     25%{
+        transform: translate(0px, 10px) rotate(2deg)
+     }
+
+     50% {
+         transform: translate(0px, 20px) rotate(3deg)
+     }
+     75% {
+        transform: translate(0px, 10px) rotate(2deg)
+    }
+
+     100% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+ }
+
+ @keyframes floatAnimation3 {
+     0% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+     25%{
+        transform: translate(0px, -10px) rotate(2deg)
+     }
+
+     50% {
+         transform: translate(0px, -20px) rotate(3deg)
+     }
+     75% {
+        transform: translate(0px, -10px) rotate(2deg)
+    }
+
+     100% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+ }
+
+ @keyframes floatAnimation4 {
+     0% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+     25%{
+        transform: translate(0px, 10px) rotate(2deg)
+     }
+
+     50% {
+         transform: translate(0px, 20px) rotate(4deg)
+     }
+     75% {
+        transform: translate(0px, 10px) rotate(2deg)
+    }
+
+     100% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+ }
+
+ @keyframes floatAnimation5 {
+     0% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+     25%{
+        transform: translate(0px, 10px) rotate(2deg)
+     }
+
+     50% {
+         transform: translate(0px, 20px) rotate(5deg)
+     }
+     75% {
+        transform: translate(0px, 10px) rotate(2deg)
+    }
+
+     100% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+ }
+
+ @keyframes floatAnimation6 {
+     0% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+     25%{
+        transform: translate(0px, 5px) rotate(2deg)
+     }
+
+     50% {
+         transform: translate(10px, 10px) rotate(5deg)
+     }
+
+     75% {
+         transform: translate(0, 5px) rotate(2deg);
+     }
+
+     100% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+ }
+
+ @keyframes floatAnimation7 {
+     0% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+     25%{
+        transform: translate(0px, 5px) rotate(2deg)
+     }
+
+     50% {
+         transform: translate(5px, 10px) rotate(5deg)
+     }
+
+     75% {
+         transform: translate(0px, 5px) rotate(2deg);
+     }
+
+     100% {
+         transform: translate(0px, 0px) rotate(0deg)
+     }
+ }
+ @keyframes floatAnimation8 {
+     0% {
+         transform: translateX(0px) scaleX(1)
+     }
+     49%{
+        transform: translateX(1300px) scaleX(1)
+     }
+     50% {
+         transform: translateX(1300px) scaleX(-1)
+     }
+     100% {
+        transform: translateX(0px) scaleX(-1)  
+    }
+ }
+ 

@@ -54,7 +54,7 @@ const Footer = () => {
             <h5 className='my-5 mx-2'>Connect With Us</h5>
             <Nav className='flex-column custom-nav'>
               <address>📍 123 Tech Street, City, India</address>
-              <address className='custom-map'><GoogleMapLocation/></address>
+              <address className='custom-map mx-2'><GoogleMapLocation/></address>
               <address>📞 <a href='tel:+91 12345 67890' className='text-decoration-none text-light'>+123 456 7890</a></address>
               <address>📧 <a href='mailto:support@example.com' className='text-decoration-none text-light'>brightureinnovation@brinnov.com</a></address>
               <address>🌍 <a href='www.example.com' className='text-decoration-none text-light'>www.example.com</a></address>

@@ -3,10 +3,14 @@ import './App.css';
 import routes from './routes/routes';
 import Footer from './components/layout/Footer';
 import Navigationbar from './components/layout/NavigationBar';
+import { createContext, useState } from 'react';
+
+export const digitalContext = createContext();
 
 function App() {
+  const [color, setColor] = useState("light");
   return (
-    <>
+    <digitalContext.Provider value={{color, setColor}}>
       <Navigationbar />
       <Routes>
         {
@@ -16,7 +20,7 @@ function App() {
         }
       </Routes>
       <Footer />
-    </>
+    </digitalContext.Provider>
   );
 }
 

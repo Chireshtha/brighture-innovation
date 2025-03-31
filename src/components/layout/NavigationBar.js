@@ -43,15 +43,7 @@ const Navigationbar = () => {
                         </NavDropdown>
                         <Nav.Link as={NavLink} to="/portfolio" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Portfolio</Nav.Link>
                         <Nav.Link as={NavLink} to="/blog" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Blog</Nav.Link>
-                        {/* {career Dropdown} */}
-                        <NavDropdown title="Careers" id="careers-dropdown" show={openDropdown === "careers"} onMouseEnter={() => handleMouseEnter("careers")} onMouseLeave={handleMouseLeave} className="custom-nav-link" onClick={() => { handleMouseEnter(openDropdown === "careers" ? "null" : "careers") }}>
-                            <Container className="custom-dropdown-1">
-                                <NavDropdown.Item className="custom-nav-item" as={NavLink} to="/careers/internships" onClick={() => { handleDropdownItemClick(); handlemobileDropdownItemClick(); }}>Internships</NavDropdown.Item>
-                                <NavDropdown.Item className="custom-nav-item" as={NavLink} to="/careers/fulltime" onClick={() => { handleDropdownItemClick(); handlemobileDropdownItemClick(); }}>Full-Time Jobs</NavDropdown.Item>
-                                <NavDropdown.Item className="custom-nav-item" as={NavLink} to="/careers/parttime" onClick={() => { handleDropdownItemClick(); handlemobileDropdownItemClick(); }}>Part-Time Jobs</NavDropdown.Item>
-                                <NavDropdown.Item className="custom-nav-item" as={NavLink} to="/careers/remote" onClick={() => { handleDropdownItemClick(); handlemobileDropdownItemClick(); }}>Remote Opportunities</NavDropdown.Item>
-                            </Container>
-                        </NavDropdown>
+                        <Nav.Link as={NavLink} to="/career" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Career</Nav.Link>
                         <Nav.Link as={NavLink} to="/contact" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
