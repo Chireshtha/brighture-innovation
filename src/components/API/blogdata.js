@@ -29,7 +29,7 @@ const blogdata = [{
                     {
                         "title": "AI-Driven SEO: The Future of Search Engine Rankings",
                         "description": "How AI is transforming SEO strategies, top AI tools for SEO in 2025, and predicting search trends with AI.",
-                        "image": "./Images/image171.jpg",
+                        "image": `${process.env.PUBLIC_URL}/Images/image171.jpg`,
                         "tags": ["AI", "SEO", "Search Trends"]
                     },
                     {
