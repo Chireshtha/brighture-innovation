@@ -1,5 +1,5 @@
 import React from 'react' 
-import Clientreview from '../../routes/Clientreview'
+import Clientreview from '../API/Clientreview'
 import { Card, Container } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 import '../../Styles/Testimonial.css'
@@ -13,7 +13,7 @@ import { FaSmile } from 'react-icons/fa'
 
 const Testimonial = () => {
   return (
-    <Container className='my-5'>
+    <Container fluid className='my-5'>
       <motion.h2 className='text-center'
       initial = {{opacity:0, y:-30}}
       whileInView={{opacity:1, y:0}}
@@ -40,7 +40,7 @@ const Testimonial = () => {
          {
           Clientreview.map((user, index)=>(
             <SwiperSlide key={index} className='my-5 custom-swiper'>
-            <Card key={index} className='p-3 testimonial-container'>
+            <Card fluid key={index} className='p-3 testimonial-container'>
               <Card.Body>
                 <Card.Title className='py-2 fs-4'>{user.name}</Card.Title>
                 <Card.Subtitle className='py-2'>{user.project}</Card.Subtitle>

@@ -8,6 +8,7 @@
     width: var(--width);
     max-width: var(--max-width);
     height: auto;
+    font-family: 'Urbanist', sans-serif;
 }
  
 .bg-sevice-img{
@@ -111,4 +112,11 @@
     z-index: 10;
     background: rgba(233, 226, 226, 1);
     cursor: pointer;
+}
+
+@media(max-width: 768px){
+    .col-service h1{
+        display: flex;
+        
+    }
 }

@@ -1,9 +1,14 @@
 /* Container - 1 */
-
+:root {
+    --font-family: "Pathway Extreme", "Sans-serif";
+    --width: 100%;
+ }
+ 
 .custom-home-container-1 {
     background: linear-gradient(135deg, #FF5901, #FF5901);
     height: 80vh;
-    font-family: "Pathway Extreme", "Sans-serif";
+    width: var(--width);
+    font-family: var(--font-family);
 }
 
 .custom-btn-1,

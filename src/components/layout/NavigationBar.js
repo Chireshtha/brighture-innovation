@@ -26,7 +26,7 @@ const Navigationbar = () => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="navbar-nav" className="navbar-collapse">
                     <Nav className="ms-auto mt-4 pt-3 px-6">
-                        <Nav.Link as={NavLink} to="/" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Home</Nav.Link>
+                        <Nav.Link as={NavLink} to="/Company-Website-Frontend" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Home</Nav.Link>
                         <Nav.Link as={NavLink} to="/about" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>About</Nav.Link>
                         {/* Services Dropdown */}
 

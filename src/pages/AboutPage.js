@@ -15,14 +15,14 @@ const AboutPage = () => {
   return (
     <div className='about-page'>
       {/* section 1 */}
-      <Container fluid className='d-flex justify-content-center align-items-center px-5 custom-about-container-1'>
+      <Container fluid className='text-center d-flex text-light align-items-center justify-content-center custom-about-container-1'>
         <Row className='align-items-center'>
-          <Col md={6} className='d-flex flex-column justify-content-center align-items-center'>
-            <h1 className='text-primary my-4 fs-1'>Who We Are</h1>
-            <p className='text-primary my-4 fs-6 fw-medium'>Welcome to <strong>Brighture Innovation</strong>, where creativity meets technology! We are a forward-thinking digital marketing and IT solutions company dedicated to helping businesses grow, scale, and succeed in the digital world.</p>
-            <p className='text-primary my-4 fs-6 fw-medium'>With expertise in web development, SEO, branding, social media marketing, and cutting-edge IT solutions, we empower startups, small businesses, and enterprises to establish a strong online presence and achieve their business goals.</p>
+            <Col md={6} className='text-primary d-flex justify-content-center align-items-center flex-column px-sm-3 mx-sm-3'>
+            <h1 className='my-4 display-5 fw-semibold pt-4'>Who We Are</h1>
+            <p className='fs-6 text-start fw-medium'>Welcome to <strong>Brighture Innovation</strong>, where creativity meets technology! We are a forward-thinking digital marketing and IT solutions company dedicated to helping businesses grow, scale, and succeed in the digital world.</p>
+            <p className='fs-6 text-start fw-medium'>With expertise in web development, SEO, branding, social media marketing, and cutting-edge IT solutions, we empower startups, small businesses, and enterprises to establish a strong online presence and achieve their business goals.</p>
           </Col>
-          <Col md={6} className='d-flex justify-content-center align-items-center'>
+            <Col md={6} className='d-flex justify-content-center align-items-center'>
             <div className='diamond-layout'>
               <div className='diamond diamond-top'>
                 <img src={aboutimg1} alt='Loading about img...' className='diamond-img' />

@@ -1,0 +1,63 @@
+:root{
+    --font-family: "Pathway Extreme", "Sans-serif";
+    --width: 100%;
+    --max-width: 1200px;
+}
+.contact-main-container{
+    font-family: var(--font-family);
+    width: var(--width);
+    overflow: hidden;
+}
+ 
+.contact-main-content{
+    width: 100%;
+    min-height: 90vh;
+    background: url('../Images/image229.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+}
+
+.color{
+    color: #04e762;
+}
+.contact-content-para{
+    color: #f5e97d;
+}
+.span-color{
+    color: #f58220;
+}
+.contact-container-1{
+    background-color: #034181;
+}
+.contact-heading{
+    font-family: 'Urbanist', sans-serif;
+}
+.contact-para{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.color-2{
+    background-color: #f58220 !important;
+    border: none;
+}
+.contact-form{
+    font-family: 'Urbanist', sans-serif;
+}
+.contact-address{
+color: #3a506b;
+font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.custom-color{
+ color: #3a506b;   
+}
+
+.map-container{
+    width: 100%;
+    height: 550px;
+    z-index: 0;
+}
+ 

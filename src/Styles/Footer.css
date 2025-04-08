@@ -21,6 +21,12 @@
     background-color: 1px solid #fff;
     margin-top: 50px !important;
 }
+.container-style{
+    width: 230px;
+    height: 150px;
+    margin-bottom: 10px;
+    z-index: 0;
+}
 @media(max-width: 768px) {
     h5{
         font-size: 25px !important;

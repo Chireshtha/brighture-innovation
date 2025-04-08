@@ -53,11 +53,11 @@ const Footer = () => {
           <Col xs={12} sm={6} md={3}>
             <h5 className='my-5 mx-2'>Connect With Us</h5>
             <Nav className='flex-column custom-nav'>
-              <address>📍 123 Tech Street, City, India</address>
+              <address>📍 123 Tech Street, Abc City, 600001, India</address>
               <address className='custom-map mx-2'><GoogleMapLocation/></address>
               <address>📞 <a href='tel:+91 12345 67890' className='text-decoration-none text-light'>+123 456 7890</a></address>
               <address>📧 <a href='mailto:support@example.com' className='text-decoration-none text-light'>brightureinnovation@brinnov.com</a></address>
-              <address>🌍 <a href='www.example.com' className='text-decoration-none text-light'>www.example.com</a></address>
+              <address>🌍 <a href='career/' className='text-decoration-none text-light'>www.brinnov.com</a></address>
             </Nav>
           </Col>
         </Row>

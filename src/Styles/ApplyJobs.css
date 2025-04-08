@@ -1,0 +1,18 @@
+:root {
+    --font-family: "Pathway Extreme", "Sans-serif";
+    --width: 100%;
+    --max-width: 1200px;
+}
+.apply-container{
+     font-family: var(--font-family);
+     width: var(--width);
+     height: auto;
+     font-size: 17.5px;
+ }
+.apply-card{
+    width: 100%;
+}
+.mail-container{
+    background: linear-gradient(rgba(7, 44, 166, 0.7),rgba(8, 16, 40, 0.7), rgba(6, 1, 22, 0.7)), url(../Images/image223.gif);
+}
+ 

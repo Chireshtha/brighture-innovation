@@ -4,11 +4,12 @@
      --max-width: 1200px;
  }
 .main-container{
-    font-family: var(--font-family);
+     font-family: var(--font-family);
      width: var(--width);
      height: auto;
      background-color: #F0F1F2;
-}
+     overflow: hidden;
+ }
  .career-container {
      font-family: var(--font-family);
      width: var(--width);
@@ -26,8 +27,8 @@
  }
 
  .career-bg-overlay {
-     background: linear-gradient(rgba(55, 100, 205, 0.7),rgba(58, 128, 198, 0.7),rgba(82, 145, 212, 0.7),rgba(71, 110, 194, 0.7),rgba(74, 114, 207, 0.7), rgba(20, 80, 219, 0.7));
-      width: var(--width);
+     background: linear-gradient(rgba(55, 100, 205, 0.5),rgba(58, 128, 198, 0.5),rgba(82, 145, 212, 0.5),rgba(71, 110, 194, 0.5),rgba(74, 114, 207, 0.5), rgba(20, 80, 219, 0.5));
+    width: var(--width);
      height: 38rem;
      position: absolute;
      top: 0;
@@ -37,7 +38,6 @@
 
  .career-content {
      position: relative;
-     margin: 100px 200px;
      z-index: 2;
      text-align: center;
      max-width: var(--max-width);
@@ -152,6 +152,21 @@
     background-color: #00205B !important;
     color: #FFFFFF !important;
  }
+
+ .hiring-container, .hiring-container-1{
+    font-family: var(--font-family);
+    width: 100%;
+    height: auto;
+    background-color: #FAFAFA;
+ }
+ .hiring-container-1{
+    width: var(--width);
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../Images/image227.avif');
+    background-size: cover;
+    background-position: center;
+ }
+ 
  @keyframes floatAnimation1 {
      0% {
          transform: translate(0px, 0px) rotate(0deg)

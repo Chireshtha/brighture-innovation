@@ -22,16 +22,16 @@ const ServicePage = () => {
             <div className={`${service.containerClass}`} style={{ background: service.background }}>
                 <Container fluid className={`${service.titleClass} text-primary py-5 p-0 d-flex flex-column justify-content-center align-items-center service-container-1`}>
                     <Row className='align-items-center'>
-                        <Col sm={12} md={6} className='d-flex flex-column sm-fs-6 col-service'>
-                            <motion.div
+                        <Col md={6} className='d-flex flex-column col-service'>
+                            <motion.div 
                                 initial={{ opacity: 0, x: -100 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: false }}
                                 transition={{ duration: 0.6, ease: "easeInOut" }}
                             >
-                                <h1 className='py-3'>{service.title}</h1>
-                                <p>{service.overview}</p>
-                                <h3 className='py-3'>Technologies We Use:</h3>
+                                <h1 className='py-3 display-5 fw-semibold'>{service.title}</h1>
+                                <p className='fs-6 fw-medium'>{service.overview}</p>
+                                <h3 className='py-3 fw-semibold'>Technologies We Use:</h3>
                                 <div className='w-100 py-2 text-left'>
                                     {service.technologies.map((techlist, index) => (
                                         <p key={index} >✅ {techlist}</p>
@@ -43,14 +43,14 @@ const ServicePage = () => {
                             </motion.div>
                         </Col>
 
-                        <Col sm={12} md={6} className='d-flex flex-column'>
+                        <Col md={6} className='d-flex flex-column'>
                             <motion.div
                                 initial={{ opacity: 0, x: 100 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: false }}
                                 transition={{ duration: 0.6, ease: "easeInOut" }}
                             >
-                                <img className={`bg-sevice-img ${service.imageClass}`} src={service.image} alt='Service Img Loading...' style={{ borderRadius: service.borderRadius }} />
+                                <img className={`img-fluid bg-sevice-img ${service.imageClass}`} src={service.image} alt='Service Img Loading...' style={{ borderRadius: service.borderRadius }} />
                             </motion.div>
                         </Col>
                     </Row>
@@ -81,7 +81,7 @@ const ServicePage = () => {
                             viewport={{ once: false }}
                             transition={{ duration: 0.6, ease: "easeInOut" }}
                         >
-                            <img className='bg-sevice-img' src={serviceimg} alt='Service Img Loading...' />
+                            <img className='img-fluid bg-sevice-img' src={serviceimg} alt='Service Img Loading...' />
                         </motion.div>
                     </Col>
                      
@@ -122,7 +122,7 @@ const ServicePage = () => {
                                 viewport={{ once: false }}
                                 transition={{ scale: 1.03, duration: 0.6, ease: "easeInOut" }}
                             >
-                                <img src={service.img} alt='Sevice Img Loading...' className='service-info-img' />
+                                <img src={service.img} alt='Sevice Img Loading...' className='img-fluid service-info-img' />
                                 <div className='serviceinfo-effect mx-auto p-3'>
                                     <h4 className='custom-color-h4 mx-auto'>{service.icon} {service.title}</h4>
                                     <p className='custom-color-p'>{service.desc}</p>

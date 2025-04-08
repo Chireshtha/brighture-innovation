@@ -6,6 +6,9 @@ body{
   padding-top: var(--navbar-height);
   -webkit-overflow-scrolling: touch;	
 }
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
  

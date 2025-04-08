@@ -10,7 +10,7 @@ import ApplyJob from '../pages/ApplyJob';
 
 
 const routes = [
-    { path: "/", element: <HomePage /> },
+    { path: "/Company-Website-Frontend", element: <HomePage /> },
     { path: "/about", element: <AboutPage /> },
     { path: "/services/:slug", element: <ServicePage /> },
     { path: "/portfolio", element: <PortfolioPage /> },

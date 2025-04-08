@@ -4,7 +4,6 @@
     display: flex !important; 
     justify-content: center !important;
      margin-bottom: 10px;
-
  }
  .swiper-button-prev, .swiper-button-next{
       color: #f4e285 !important;
@@ -16,5 +15,11 @@
     transform: scale(1.03);
     cursor: pointer;
  }
- 
+ @media(max-width: 768px){
+   .custom-swiper{
+      width: 400px  !important;
+      display: flex !important; 
+      justify-content: center !important;
+   }
+ }
  

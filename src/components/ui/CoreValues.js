@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { motion } from 'framer-motion'
+import '../../Styles/AboutPage.css'
 
 const CoreValues = () => {
     return (
@@ -12,7 +13,7 @@ const CoreValues = () => {
                 transition={{ duration: 0.6, ease: "easeInOut" }}
             >
                 <Row className='align-items-center mb-5'>
-                    <h1 className='fs-1 text-primary d-flex flex-column justify-content-center align-items-center'>Our Core Values</h1>
+                    <h1 className='display-5 fw-semibold text-primary d-flex flex-column justify-content-center align-items-center'>Our Core Values</h1>
                 </Row>
                 <Row className='align-items-center text-light'>
                     <Col xs={12} sm={6} md={3} className='d-flex flex-column justify-content-center align-items-center col-item-1'>
