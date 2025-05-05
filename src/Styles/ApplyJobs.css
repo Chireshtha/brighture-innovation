@@ -1,10 +1,9 @@
 :root {
-    --font-family: "Pathway Extreme", "Sans-serif";
     --width: 100%;
     --max-width: 1200px;
 }
 .apply-container{
-     font-family: var(--font-family);
+     font-family: "Pathway Extreme", "Sans-serif";
      width: var(--width);
      height: auto;
      font-size: 17.5px;
@@ -14,5 +13,14 @@
 }
 .mail-container{
     background: linear-gradient(rgba(7, 44, 166, 0.7),rgba(8, 16, 40, 0.7), rgba(6, 1, 22, 0.7)), url(../Images/image223.gif);
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
  

@@ -81,15 +81,15 @@ const JobApplication = () => {
       <Row className='py-1'>
         {paginatedJobs && paginatedJobs.length > 0 ? (
           paginatedJobs.map((job) => (
-            <Col md={12}>
-              <Card key={job.id} className='my-2'>
+            <Col key={job.slug} md={12}>
+              <Card className='my-2'>
                 <Card.Body>
-                  <Card.Title className='py-1 '>{job.title}</Card.Title>
+                  <Card.Title className='py-1'>{job.title}</Card.Title>
                   <div className='d-flex flex-row'>
-                    <Card.Subtitle className='mx-left my-auto w-25'><FaLocationDot color='#0a9396'/> {job.location}</Card.Subtitle>
-                    <Card.Subtitle className='mx-auto my-auto w-25'>{job.job_type}</Card.Subtitle>
-                    <Card.Subtitle className='mx-auto my-auto w-25'><FaBriefcase color='#0a9396'/> {job.experience}</Card.Subtitle>
-                    <Button variant='dark' className='mx-last my-auto bg-primary border-0 btn-md'><Link to={`/applyjob/${job.slug}`} className='text-light fs-6 text-decoration-none'>Apply Now</Link></Button>
+                    <Card.Subtitle className='mx-left my-auto w-25 custom-size'><FaLocationDot color='#0a9396'/> {job.location}</Card.Subtitle>
+                    <Card.Subtitle className='mx-auto my-auto w-25 custom-size'>{job.job_type}</Card.Subtitle>
+                    <Card.Subtitle className='mx-auto my-auto w-25 custom-size'><FaBriefcase color='#0a9396'/> {job.experience}</Card.Subtitle>
+                    <Button variant='dark' className='mx-last my-auto bg-primary border-0 btn-md'><Link to={`/applyjob/${job.slug}`} className='text-light text-decoration-none custom-size1'>Apply Now</Link></Button>
                   </div>
                 </Card.Body>
               </Card>

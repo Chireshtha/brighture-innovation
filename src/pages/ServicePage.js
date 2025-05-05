@@ -22,24 +22,24 @@ const ServicePage = () => {
             <div className={`${service.containerClass}`} style={{ background: service.background }}>
                 <Container fluid className={`${service.titleClass} text-primary py-5 p-0 d-flex flex-column justify-content-center align-items-center service-container-1`}>
                     <Row className='align-items-center'>
-                        <Col md={6} className='d-flex flex-column col-service'>
-                            <motion.div 
+                        <Col md={6} className='d-flex flex-column'>
+                            <motion.div
                                 initial={{ opacity: 0, x: -100 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: false }}
                                 transition={{ duration: 0.6, ease: "easeInOut" }}
                             >
-                                <h1 className='py-3 display-5 fw-semibold'>{service.title}</h1>
-                                <p className='fs-6 fw-medium'>{service.overview}</p>
+                                <h1 className='py-3 fw-semibold'>{service.title}</h1>
+                                <p className='fw-medium'>{service.overview}</p>
                                 <h3 className='py-3 fw-semibold'>Technologies We Use:</h3>
                                 <div className='w-100 py-2 text-left'>
                                     {service.technologies.map((techlist, index) => (
                                         <p key={index} >✅ {techlist}</p>
                                     ))}
                                 </div>
-                                <p className='fs-6'>{service.para1}</p>
+                                <p className=''>{service.para1}</p>
                                 <p className='fw-semibold fs-5'>{service.para2}</p>
-                                <Link as={Link} to="/contact"><button className='service-btn btn-lg w-50 mt-4 fs-5'>{service.ctaText}</button></Link>
+                                <Link as={Link} to="/contact"><button className='service-btn btn-lg w-75 mt-4 fs-5'>{service.ctaText}</button></Link>
                             </motion.div>
                         </Col>
 
@@ -57,12 +57,12 @@ const ServicePage = () => {
                 </Container>
             </div>
             <Container fluid className='service-container-2 py-4'>
-                <Row className='g-4'>
+                <Row >
                     {service.keyBenefits.map((benefit, index) => (
-                        <Col key={index} md={3} >
+                        <Col key={index} md={3}>
                             <Card fluid className='h-100 shadow-sm-md bg-danger key-benefit-card'>
                                 <Card.Body>
-                                    <p className='py-2 text-light' key={index} ><span className='fs-5'>✅</span>  {benefit}</p>
+                                    <p className='text-light' key={index} ><span className='fs-5'>✅</span>  {benefit}</p>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -84,7 +84,7 @@ const ServicePage = () => {
                             <img className='img-fluid bg-sevice-img' src={serviceimg} alt='Service Img Loading...' />
                         </motion.div>
                     </Col>
-                     
+
                     <Col sm={12} md={6} className='d-flex flex-column m-0 p-0'>
                         <motion.div
                             initial={{ opacity: 0, y: -100 }}
@@ -93,8 +93,8 @@ const ServicePage = () => {
                             transition={{ duration: 0.6, ease: "easeInOut" }}
                         >
                             <div className='bg-danger text-light p-2 container-4-content'>
-                                <h3 className='py-2 text-center'>Why Choose Our Services?</h3>
-                                <p className='px-4'><em>At Brighture Innovation, we offer a diverse range of IT and digital solutions to help businesses thrive in the modern world. From development to marketing, automation to security, we deliver high-quality, scalable, and innovative services tailored to meet your business needs.</em></p>
+                                <h3 className='pt-5 text-center'>Why Choose Our Services?</h3>
+                                <p className='px-5 small'>At Brighture Innovation, we offer a diverse range of IT and digital solutions to help businesses thrive in the modern world. From development to marketing, automation to security, we deliver high-quality, scalable, and innovative services tailored to meet your business needs.</p>
                                 <div className='service-list bg-danger lh-1 text-light mx-5'>
                                     <p> <FaRocket className='text-danger fs-4 bg-warning rounded-3 p-1' /> &nbsp; Technology solutions designed to enhance business productivity.</p>
                                     <p><FaLaptopCode className='text-danger fs-4 bg-warning rounded-3 p-1' /> &nbsp; Scalable and high-performing software applications.</p>
@@ -122,9 +122,9 @@ const ServicePage = () => {
                                 viewport={{ once: false }}
                                 transition={{ scale: 1.03, duration: 0.6, ease: "easeInOut" }}
                             >
-                                <img src={service.img} alt='Sevice Img Loading...' className='img-fluid service-info-img' />
+                                <img src={service.img} alt='Service Img Loading...' className='img-fluid service-info-img my-auto' />
                                 <div className='serviceinfo-effect mx-auto p-3'>
-                                    <h4 className='custom-color-h4 mx-auto'>{service.icon} {service.title}</h4>
+                                    <h4 className='custom-color-h4 text-center'>{service.icon} {service.title}</h4>
                                     <p className='custom-color-p'>{service.desc}</p>
                                 </div>
                             </motion.div>

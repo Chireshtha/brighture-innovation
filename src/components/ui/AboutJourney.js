@@ -17,7 +17,7 @@ const AboutJourney = () => {
                             viewport={{ once: false }}
                             transition={{ duration: 0.6, ease: "easeInOut" }}
                         >
-                            <h1 className='py-4 fs-1'>✅ Our Journey</h1>
+                            <h1 className='py-4 fs-1 '>✅ Our Journey</h1>
                             <p className='fs-6 text-start fw-medium px-4'>From humble beginnings to a growing name in digital marketing and IT solutions, our journey has been fueled by passion, dedication, and the drive to create value for businesses of all sizes.</p>
                             <p className='fs-6 text-start fw-medium px-4'>We have successfully partnered with startups, small businesses, and enterprises, helping them navigate the digital landscape and achieve their goals.</p>
                         </motion.div>

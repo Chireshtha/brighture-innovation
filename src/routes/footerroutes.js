@@ -4,17 +4,15 @@ const footerroutes = {
     companyLinks: [
         { name: "Home", path: "/" },
         { name: "About", path: "/about" },
-        { name: "Services", path: "/services" },
         { name: "Portfolio", path: "/portfolio" },
         { name: "Blog", path: "/blog" },
         { name: "Contact", path: "/contact" },
-        { name: "Careers", path: "/careers" }
+        { name: "Career", path: "/career" }
     ],
     aboutLinks: [
         {name: "Our Story", path:"/ourstory"},
         {name: "Mission & Vision", path:"/mission-vission"},
         {name: "Team", path:"/team"},
-        {name: "Blog", path:"/blog"},
         {name: "Testimonials", path:"/testimonials"},
         {name: "News & Updates", path:"/news-updates"},
     ],
@@ -29,12 +27,11 @@ const footerroutes = {
      ],
 
      addressLink : [
-        {icon: <FaFacebook />, path:"https://www.facebook.com/"},
-        {icon: <FaTwitter />, path:"https://www.twitter.com/"},
-        {icon: <FaLinkedin />, path:"https://www.linkedin.com/"},
-        {icon: <FaInstagram />, path:"https://www.instagram.com/"},
-        {icon: <FaYoutube />, path:"https://www.youtube.com/"},
-        {icon: <FaFacebook />, path:"https://www.facebook.com/"},
+        {icon: <FaFacebook />, path:"https://www.facebook.com/", color:"#3b5998"},
+        {icon: <FaTwitter />, path:"https://www.twitter.com/", color:"#1da1f2"},
+        {icon: <FaLinkedin />, path:"https://www.linkedin.com/", color:"#0077b5"},
+        {icon: <FaInstagram />, path:"https://www.instagram.com/", color:"#e1306c"},
+        {icon: <FaYoutube />, path:"https://www.youtube.com/", color:"#ff0000"},
      ]
 }
 

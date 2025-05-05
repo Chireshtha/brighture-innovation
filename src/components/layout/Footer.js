@@ -20,7 +20,7 @@ const Footer = () => {
               {
                 footerroutes.companyLinks.map((link, index) => (
                   <Nav.Item as="li" key={index}>
-                    <Nav.Link as={NavLink} to={link.path} className='nav-link'>{link.name}</Nav.Link>
+                    <Nav.Link as={NavLink} to={link.path} className='nav-link bg-0'>{link.name}</Nav.Link>
                   </Nav.Item>
                 ))
               }

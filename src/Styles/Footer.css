@@ -1,6 +1,7 @@
 .custom-footer {
     width: 100%;
     min-height: 100vh;
+    height: auto;
     margin: auto;
     padding: 20px;
 }
@@ -39,5 +40,8 @@
     .custom-map{
         display: flex;
         justify-content: center;
+    }
+    .nav-link:hover{
+        background-color: transparent !important;
     }
 }

@@ -16,7 +16,7 @@ const ApplyJob = () => {
                             <Card.Title className='mb-3 fs-1 fw-bold'> {job.title}</Card.Title>
                             <Card.Subtitle className='mb-4 text-muted'>{job.location} &nbsp; | &nbsp; {job.job_type}</Card.Subtitle>
                             <strong className='fs-4'>Description:</strong>
-                            <Card.Text> {job.description}</Card.Text>
+                            <Card.Text className='fs-6'> {job.description}</Card.Text>
                             <strong className='fs-4 mt-2'>Experience Required:</strong>
                             <Card.Text className='fw-semibold mb-3'>{job.experience}</Card.Text>
                             <h5 className='fs-4 fw-bold'>Responsibilities:</h5>
@@ -59,13 +59,13 @@ const ApplyJob = () => {
                                 </Form.Group>
                                 <Form.Group className='mb-3' controlId='formResume'>
                                     <Form.Label>Upload Resume</Form.Label>
-                                    <Form.Control type='file' className='w-50' />
+                                    <Form.Control type='file' className='w-100 custom-width' />
                                 </Form.Group>
                                 <Form.Group className='mb-3' controlId='formMessage'>
                                     <Form.Label>Message</Form.Label>
                                     <Form.Control as='textarea' rows={5} placeholder='Write a message' />
                                 </Form.Group>
-                                <Button variant='primary' type='submit' className='w-25'>Submit</Button>
+                                <Button variant='primary' type='submit' className='w-100 mt-3'>Submit</Button>
                             </Form>
                         </Card.Body>
                     </Card>

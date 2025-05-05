@@ -1,11 +1,10 @@
 :root{
-    --font-family: "Pathway Extreme", "Sans-serif";
     --width: 100%;
     --max-width: 1200px;
 }
 /* First section */
 .blog-container-1{
-    font-family: var(--font-family);
+    font-family: "Pathway Extreme", "Sans-serif";
     width: 100%;
     overflow: hidden;
   }
@@ -53,6 +52,9 @@ min-height: 100%;
 .subscribe-btn{
     animation: blink 1s infinite, glow 1.5s infinite;
     color: #fff;
+}
+.custom-font{
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 @keyframes blink {
     0% { opacity: 1; text-shadow: 0px 0px 5px #ff006e; background-color: #ff006e; }

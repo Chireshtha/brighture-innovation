@@ -26,7 +26,7 @@ const Navigationbar = () => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="navbar-nav" className="navbar-collapse">
                     <Nav className="ms-auto mt-4 pt-3 px-6">
-                        <Nav.Link as={NavLink} to="/Company-Website-Frontend" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Home</Nav.Link>
+                        <Nav.Link as={NavLink} to="/" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Home</Nav.Link>
                         <Nav.Link as={NavLink} to="/about" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>About</Nav.Link>
                         {/* Services Dropdown */}
 
@@ -41,7 +41,7 @@ const Navigationbar = () => {
                                 </Row>
                             </Container>
                         </NavDropdown>
-                        <Nav.Link as={NavLink} to="/portfolio" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Portfolio</Nav.Link>
+                        <Nav.Link  href="https://chireshtha-portfolio.netlify.app/" target='_blank' rel='noopener noreferrer' className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Portfolio</Nav.Link>
                         <Nav.Link as={NavLink} to="/blog" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Blog</Nav.Link>
                         <Nav.Link as={NavLink} to="/career" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Career</Nav.Link>
                         <Nav.Link as={NavLink} to="/contact" className="nav-link custom-nav-link" onClick={handlemobileDropdownItemClick}>Contact</Nav.Link>

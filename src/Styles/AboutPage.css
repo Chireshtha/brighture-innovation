@@ -1,10 +1,9 @@
-:root{
-    font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+:root {
     --width: 100%;
     --max-width: 1200px;
 }
 
-.about-page{
+.about-page {
     width: 100%;
     height: auto;
 }
@@ -15,15 +14,18 @@
     width: var(--width);
     max-width: var(--max-width);
     min-height: 70vh !important;
-    font-family: --font-family;
+    height: 100%;
+    font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     animation: SlideInUp 0.5s ease-in-out;
 }
-@keyframes SlideInUp{
-    0%{
+
+@keyframes SlideInUp {
+    0% {
         transform: translateY(-50%);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0%);
         opacity: 1;
     }
@@ -31,21 +33,21 @@
 
 .diamond-layout {
     display: grid;
-    grid-template-columns: repeat(3, 210px);
-    grid-template-rows: repeat(3, 210px);
-    gap: 5px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
     position: relative;
 }
 
 .diamond {
-    width: 210px;
-    height: 210px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .diamond-img {
     width: 100%;
     height: 100%;
@@ -58,9 +60,11 @@
     left: 330px;
     transition: transform 0.6s ease-in-out, left 0.5s ease-in;
 }
-.diamond-top:hover{
-    left:340px;
+
+.diamond-top:hover {
+    left: 340px;
     transform: scale(1.03);
+    
 }
 
 .diamond-left {
@@ -68,7 +72,8 @@
     left: 100px;
     transition: transform 0.6s ease-in-out, top 0.5s ease-in;
 }
-.diamond-left:hover{
+
+.diamond-left:hover {
     top: 80px;
     transform: scale(1.03);
 }
@@ -78,8 +83,9 @@
     left: 380px;
     transition: transform 0.6s ease-in-out, top 0.5s ease-in;
 }
-.diamond-right:hover{
-    top:340px;
+
+.diamond-right:hover {
+    top: 340px;
     transform: scale(1.03);
 }
 
@@ -88,7 +94,8 @@
     left: 150px;
     transition: transform 0.6s ease-in-out, top 0.5s ease-in;
 }
-.diamond-bottom:hover{
+
+.diamond-bottom:hover {
     top: 350px;
     transform: scale(1.03);
 }
@@ -97,35 +104,39 @@
 
 /* Container-2 */
 
-.custom-about-container-2{
+.custom-about-container-2 {
     width: var(--width);
     max-width: var(--max-width);
     min-height: 50vh;
     background-color: #EAEBEF;
 }
-.Mission-image{
+
+.Mission-image {
     object-fit: cover;
     width: 50%;
     height: 50%;
 }
-h1{
+
+h1 {
     font-family: 'Urbanist', sans-serif;
 }
-p{
+
+p {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 /* Container 3 */
 
-.custom-about-container-3{
+.custom-about-container-3 {
     width: var(--width);
     max-width: var(--max-width);
     min-height: 80vh;
-    font-family: var(--font-family);
-}
+    font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+
 .design-layout {
-     width: 450px;
-     height: 450px;
-     position: relative;
+    width: 450px;
+    height: 450px;
+    position: relative;
 }
 
 .design {
@@ -138,6 +149,7 @@ p{
     border: 1px solid #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .design-img {
     width: 100%;
     height: 100%;
@@ -145,16 +157,18 @@ p{
     object-fit: cover;
     transition: transform 0.6s ease-in-out;
 }
-.design-img:hover{
+
+.design-img:hover {
     transform: scale(1.03);
     transform: rotate(360deg);
 }
+
 .design-top {
-     top: 0;
+    top: 0;
 }
 
 .design-left {
-     left: 0;
+    left: 0;
 }
 
 .design-right {
@@ -162,104 +176,124 @@ p{
 }
 
 .design-bottom {
-     bottom: 0;
+    bottom: 0;
 }
 
 /* Container 4 */
 
-.custom-about-container-4{
+.custom-about-container-4 {
     width: var(--width);
     min-height: 80vh;
+    height: auto;
     position: relative;
 }
-.about-content-container{
+
+.about-content-container {
     width: var(--width);
     max-width: var(--max-width);
     position: absolute;
     z-index: 1;
     color: #fff;
 }
-.about-image{
+
+.about-image {
     width: var(--width);
     min-height: 80vh;
     z-index: -1;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(95, 93, 15, 0.6),rgba(37, 95, 23, 0.6)), url('../Images/image87.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(95, 93, 15, 0.6), rgba(37, 95, 23, 0.6)), url('../Images/image87.jpg');
     background-attachment: fixed !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Container 5 */
-.custom-about-container-5{
+.custom-about-container-5 {
     width: var(--width);
     max-width: var(--max-width);
-    min-height: 60vh;
+    min-height: 40vh;
+    height: auto;
     position: relative;
 }
-.col-item-1, .col-item-2, .col-item-3, .col-item-4{
-    width: 200px;
+.custom-height{
+    height: 30vh;
+}
+
+.col-item-1,
+.col-item-2,
+.col-item-3,
+.col-item-4 {
+    width: 300px;
     height: 200px;
     border-radius: 10px;
     border: 5px solid #fff;
     transition: margin-bottom 0.3s ease-in-out;
 }
-.col-item-1:hover, .col-item-2:hover, .col-item-3:hover, .col-item-4:hover{
+
+.col-item-1:hover,
+.col-item-2:hover,
+.col-item-3:hover,
+.col-item-4:hover {
     margin-bottom: 10px;
 }
 
-.col-item-1{
+.col-item-1 {
     background-color: #ef476f;
 }
-.col-item-2{
+
+.col-item-2 {
     background-color: #ffca3a;
 }
-.col-item-3{
+
+.col-item-3 {
     background-color: #06d6a0;
 }
-.col-item-4{
+
+.col-item-4 {
     background-color: #118ab2;
 }
 
 
 
-@media (max-width: 768px){
-    .diamond-layout {
-        display: grid;
-        grid-template-columns: repeat(3, 210px);
-        grid-template-rows: repeat(3, 210px);
-        gap: 5px;
+@media (max-width: 768px) {
+    .diamond-layout{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        position: static;
+        padding: 1rem 0;
     }
-    
-    .diamond {
-        width: 180px;
-        height: 180px;
+    .diamond{
+        width: 150px;
+        height: 150px;
+        position: static;
     }
-
-    .diamond-top {
-        top: 100px;
-        left: 300px;       
+    .custom-about-container-5{
+        min-height: 80vh;
     }
-    .diamond-left {
-        top: 100px;
-        left: 100px;
-    }
-    .diamond-right {
-        top: 300px;
-        left: 330px;
-    }
-    .diamond-bottom {
-        top: 300px;
-        left: 130px;
-    }
-
     .design-layout {
         width: 250px;
         height: 250px;
-   }
-   
-   .design {
-       width: 90px;
-       height: 90px;
-   }
+    }
+    
+    .design {
+        width: 100px;
+        height: 100px;
+    }
+    .custom-about-container-4 h1, .custom-about-container-5 h1{
+        font-size: 25px !important;
+        padding: 0 !important;
+    }
+    .custom-about-container-5 h1{
+        padding-top: 20px !important;
+    }
+    .custom-about-container-4 p{
+        font-size: 14px !important;
+    } 
 }
+ 

@@ -25,15 +25,15 @@ const HomePage = () => {
       <ServiceCard />
       <Container fluid className='text-center text-primary custom-home-container-3'>
         <Row>
-          <Col md={6}>
-            <h2 className='fw-bold mb-5 mt-5'>About Brighture Innovation</h2>
-            <p className='text-start fst-italic'>At Brighture Innovation, we empower businesses by merging technology and strategy. Our team of experts is dedicated to delivering customized solutions that drive digital success.</p>
-            <p className='mt-5 text-start'><strong>Our Commitment:</strong> We deliver innovative digital solutions by combining technology with strategic insight.</p>
-            <p className='text-start mt-3 fs-3 text-success p-2 fw-medium'>Our expert team transforms challenges into opportunities for measurable success.</p>
-            <p className='text-muted fs-5 text-start fst-italic mt-2'>Join us in shaping a future where innovation drives lasting growth 🤝😊</p>
+          <Col md={6} className='d-flex flex-column justify-content-center align-items-center'>
+            <h2 className='fw-bold display-6 pb-4'>About Brighture Innovation</h2>
+            <p className='text-start lead pb-4'>At Brighture Innovation, we empower businesses by merging technology and strategy. Our team of experts is dedicated to delivering customized solutions that drive digital success.</p>
+            <p className='text-start lead pb-4'><strong>Our Commitment:</strong> We deliver innovative digital solutions by combining technology with strategic insight.</p>
+            <p className='text-start fs-4 text-success fw-medium pb-4'>Our expert team transforms challenges into opportunities for measurable success.</p>
+            <p className='text-muted fs-5 text-start fst-italic'>Join us in shaping a future where innovation drives lasting growth 🤝😊</p>
           </Col>
 
-          <Col md={6} className='custom-img'>
+          <Col md={6} className=''>
             <img src={aboutImg} alt='Team collaborating on digital solutions' className='custom-image' />
           </Col>
         </Row>

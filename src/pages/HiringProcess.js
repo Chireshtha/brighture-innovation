@@ -8,10 +8,10 @@ const HiringProcess = () => {
     <Container fluid className='hiring-container'>
     <Row>
       <Col md={5} className='p-0 mx-auto my-auto bg-dark'>
-      <img src={bgcareer} alt='career page img loading...' width={'100%'} height={'100%'}/>
+      <img src={bgcareer} alt='career page img loading...' width={'100%'} height={'100%'} className='img-fluid'/>
       </Col>
       <Col md={5} className='mx-auto my-auto p-0'>
-        <motion.div className=' py-5'
+        <motion.div className='py-5'
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}

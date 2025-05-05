@@ -14,7 +14,7 @@ const About = () => {
 
 
     return (
-        <Container className='my-5 p-3 custom-home-container-4 text-center'>
+        <Container className='pt-5 p-3 custom-home-container-4 text-center'>
             <motion.div 
                     initial = {{opacity:0, y:100}}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ const About = () => {
                     <Card className='p-5 text-light' style={{backgroundColor:item.bgColor, cursor:'pointer'}}>
                         <div className='fs-1' style={{color:item.color}}>{item.icon}</div>
                         <Card.Title className='fw-bold mt-4'>{item.title}</Card.Title>
-                        <Card.Text className='my-3'>{item.description}</Card.Text>
+                        <Card.Text className='py-2'>{item.description}</Card.Text>
                     </Card>
                     </motion.div>
                  </Col>

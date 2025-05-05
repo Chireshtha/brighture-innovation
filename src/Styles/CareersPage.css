@@ -1,17 +1,16 @@
  :root {
-     --font-family: "Pathway Extreme", "Sans-serif";
      --width: 100%;
      --max-width: 1200px;
  }
 .main-container{
-     font-family: var(--font-family);
+     font-family: "Pathway Extreme", "Sans-serif";
      width: var(--width);
      height: auto;
      background-color: #F0F1F2;
      overflow: hidden;
  }
  .career-container {
-     font-family: var(--font-family);
+     font-family: "Pathway Extreme", "Sans-serif";
      width: var(--width);
      position: relative;
      height: 38rem;
@@ -49,34 +48,29 @@
 
  .career-content-c1 {
      font-family: cursive;
-     font-size: 70px;
      text-shadow: grey -4px -5px 5px;
+     font-size: clamp(2rem, 5vw, 4.375rem);
  }
-
+ .career-content-t1, .career-content-t2, .career-content-t3{
+    font-family: cursive;
+    font-size: clamp(1.5rem, 4vw, 3.125rem);
+    text-shadow: grey -2px -3px 2.5px;
+ }
  .career-content-t1 {
-     color: #f85e00;
-     font-family: cursive;
-     font-size: 50px;
-     text-shadow: grey -2px -3px 2.5px;
+     color: #f85e00;  
  }
 
  .career-content-t2 {
      color: #413535;
-     font-family: cursive;
-     font-size: 50px;
-     text-shadow: grey -2px -3px 2.5px;
  }
 
  .career-content-t3 {
       color: #ff3562;
-     font-family: cursive;
-     font-size: 50px;
-     text-shadow: grey -2px -3px 2.5px;
  }
 
  .career-content-desc {
-     margin-top: 120px;
-     font-size: 18px;
+     padding-top: 50px;
+     font-size: clamp(1rem, 2vw, 1.5rem);
      text-align: center;
      padding: 20px;
      font-family: cursive;
@@ -90,8 +84,8 @@
  .career-bg-img6,
  .career-bg-img7,
  .career-bg-img8 {
-     width: 100px;
-     height: 100px;
+    width: clamp(50px, 10vw, 100px);
+    height: clamp(50px, 10vw, 100px);
      position: absolute;
      z-index: 1;
  }
@@ -133,7 +127,7 @@
  }
 
  .career-bg-img7 {
-     top: 350px;
+     top: 450px;
      left: 50%;
      animation: floatAnimation7 5s ease-out infinite;   
  }
@@ -145,8 +139,16 @@
  }
  .career-job{
     font-family: 'ProximaNova-Regular', Arial, Helvetica, sans-serif;
-    width: 80% !important;
+    width: 100%;
+    max-width: 90% !important;
+
   }
+ .custom-size{
+    font-size: clamp(0.3rem, 2vw, 1.5rem);
+}
+.custom-size1{
+    font-size: clamp(0.8rem, 2vw, 1rem);   
+}
 
  .btn-bg-color{
     background-color: #00205B !important;
@@ -154,18 +156,18 @@
  }
 
  .hiring-container, .hiring-container-1{
-    font-family: var(--font-family);
+    font-family: "Pathway Extreme", "Sans-serif";
     width: 100%;
     height: auto;
     background-color: #FAFAFA;
  }
  .hiring-container-1{
     width: var(--width);
-    height: 70vh;
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../Images/image227.avif');
     background-size: cover;
     background-position: center;
  }
+
  
  @keyframes floatAnimation1 {
      0% {
@@ -323,3 +325,8 @@
     }
  }
  
+ @media (max-width: 768px) {
+ .custom-size{
+    font-size: 14px !important;
+ }
+ }
