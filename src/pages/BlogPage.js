@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Button, Card, Carousel, Col, Container, Row } from 'react-bootstrap'
 import blogdata from '../components/API/blogdata'
 import '../Styles/BlogPage.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const BlogPage = () => {
   const [blogContent, setBlogContent] = useState(null);
@@ -25,8 +25,7 @@ const BlogPage = () => {
   console.log(blogdata[0].blog)
 
 
-  // const navigate = useNavigate()
-  return (
+   return (
     <Container fluid className='blog-container-1 p-0 m-0'>
       <Carousel className='blog-header-img' activeIndex={activeSlide} onSelect={(selectedIndex) => setActiveSlide(selectedIndex)}>
         {blogContent.headerSlides.map((headerSlide, index) => (
