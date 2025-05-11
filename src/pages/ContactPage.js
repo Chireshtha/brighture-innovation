@@ -6,6 +6,7 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import footerroutes from '../routes/footerroutes'
 import { FaLocationDot } from 'react-icons/fa6'
 import { FaEnvelope, FaGlobe, FaPhoneAlt } from 'react-icons/fa'
+import 'leaflet/dist/leaflet.css' 
 
 
 const ContactPage = () => {
@@ -40,7 +41,7 @@ const ContactPage = () => {
                 <a href='mailto:support@example.com' className='text-decoration-none custom-color'><strong><FaEnvelope size={24} className='pb-1' /> Email </strong><br /> brightureinnovation@brinnov.com</a></address>
               <hr />
               <address>
-                <a href='career/' className='text-decoration-none custom-color'><strong><FaGlobe size={24} className='pb-1' /> Website</strong> <br /> www.brinnov.com</a></address>
+                <a href='https://chireshtha-brighture-innovation.netlify.app/' className='text-decoration-none custom-color'><strong><FaGlobe size={24} className='pb-1' /> Website</strong> <br /> www.brinnov.com</a></address>
               <div className='d-flex gap-3 mt-2 d-sm-flex'>
                 {
                   footerroutes.addressLink.map((link, index) => (

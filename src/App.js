@@ -1,4 +1,5 @@
 import { Outlet, ScrollRestoration } from 'react-router-dom';
+import './fixLeafletIcons'
 import './App.css';
 import Footer from './components/layout/Footer';
 import Navigationbar from './components/layout/NavigationBar';
