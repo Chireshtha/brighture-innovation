@@ -64,7 +64,7 @@ const SubscribePageForm = () => {
               <p className='text-muted custom-p'>Lets keep in touch! Please subscribe to our newsletter and stay updated</p>
               <Form onSubmit={handleSubmit} >
                 <Form.Group>
-                  <Form.Control placeholder='Enter Your Name' name='name' value={values.name} className='input-text' onChange={handleChange}  required></Form.Control>
+                  <Form.Control placeholder='Enter Your Name' name='name' value={values.name} className='input-text' onChange={handleChange} required></Form.Control>
                   {errors.name && <span className='text-danger name-error'>{errors.name}</span>}
                 </Form.Group>
                 <Form.Group className='mt-3'>
