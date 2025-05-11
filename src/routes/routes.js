@@ -7,7 +7,7 @@ import ContactPage from '../pages/ContactPage';
 import CareersPage from '../pages/CareersPage';
 import ServicePage from '../pages/ServicePage';
 import ApplyJob from '../pages/ApplyJob';
-import SuscribePage from '../pages/SubscribePage';
+import SubscribePageForm from '../components/forms/SubscribePageForm';
 import App from '../App';
 import ErrorPage from '../pages/ErrorPage';
 
@@ -26,7 +26,7 @@ const routes = createBrowserRouter([
             { path: "/career/", element: <CareersPage /> },
             { path: "/contact", element: <ContactPage /> },
             { path: "/applyjob/:slug", element: <ApplyJob /> },
-            { path: "/subscribe", element: <SuscribePage /> }
+            { path: "/subscribe", element: <SubscribePageForm /> }
         ]
     }
 ]);

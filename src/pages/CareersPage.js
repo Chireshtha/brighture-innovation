@@ -1,3 +1,4 @@
+import React from 'react'
 import { Container } from 'react-bootstrap'
 import '../Styles/CareersPage.css'
 import careerimg from '../Images/image197.jpeg'
@@ -14,6 +15,8 @@ import { easeInOut, motion } from 'framer-motion'
 import JobApplication from '../components/forms/JobApplication'
 import HiringProcess from './HiringProcess'
 import HiringMethod from './HiringMethod'
+import PrivacyPolicy from '../components/ui/PrivacyPolicy'
+import TermsConditions from '../components/ui/TermsConditions'
 
 
 const CareersPage = () => {
@@ -51,6 +54,8 @@ const CareersPage = () => {
     <HiringProcess />
     <HiringMethod />
     <JobApplication /> 
+    <PrivacyPolicy />
+    <TermsConditions />
     </Container>
   )
 }

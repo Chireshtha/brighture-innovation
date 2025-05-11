@@ -22,7 +22,7 @@ const ContactPage = () => {
 
       </Container>
       <ContactForm />
-      <Container fluid className='contact-address'>
+      <Container id='contact-form' fluid className='contact-address'>
         <Row>
           <Col md={4} className='my-auto'>
             <div className='w-75 mx-auto'>

@@ -89,7 +89,7 @@ const BlogPage = () => {
               ))}
             </Row>
           </div>
-          <div className='my-4 text-center custom-font'>
+          <div id='news-updates' className='my-4 text-center custom-font'>
             <h3 className='text-center text-primary'>Newsletter</h3>
             <h5 className='text-start text-primary mt-4'>{blogContent.additionalContent.newsletter.title}</h5>
             <p className='text-start'>{blogContent.additionalContent.newsletter.description}</p>

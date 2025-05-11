@@ -4,26 +4,24 @@ const footerroutes = {
     companyLinks: [
         { name: "Home", path: "/" },
         { name: "About", path: "/about" },
-        { name: "Portfolio", path: "/portfolio" },
         { name: "Blog", path: "/blog" },
         { name: "Contact", path: "/contact" },
         { name: "Career", path: "/career" }
     ],
     aboutLinks: [
-        {name: "Our Story", path:"/ourstory"},
-        {name: "Mission & Vision", path:"/mission-vission"},
-        {name: "Team", path:"/team"},
-        {name: "Testimonials", path:"/testimonials"},
-        {name: "News & Updates", path:"/news-updates"},
+        {name: "Our Story", path:"/about#ourstory"},
+        {name: "Mission", path:"/about#mission"},
+        {name: "Vision", path:"/about#vision"},
+        {name: "Testimonials", path:"/#testimonials"},
+        {name: "News & Updates", path:"/blog#news-updates"},
     ],
 
     supportLinks : [
-        {name: "Help Center", path:"/helpcenter"},
-        {name: "FAQs", path:"/faqs"},
-        {name: "Terms & Conditions", path:"/terms-conditions"},
-        {name: "Privacy Policy", path:"/privacy-policy"},
-        {name: "Refund Policy", path:"/refund-policy"},
-        {name: "Contact Support", path:"/contact-support"},
+        {name: "Help Center", path:"/contact#help-center"},
+        {name: "FAQs", path:"/about#faqs"},
+        {name: "Terms & Conditions", path:"/career#terms-conditions"},
+        {name: "Privacy Policy", path:"/career#privacy-policy"},
+        {name: "Contact Support", path:"/contact#contact-form"},
      ],
 
      addressLink : [

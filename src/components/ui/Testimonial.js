@@ -13,7 +13,7 @@ import { FaSmile } from 'react-icons/fa'
 
 const Testimonial = () => {
   return (
-    <Container fluid className='my-5 testimonial-section'>
+    <Container id='testimonials' fluid className='my-5 testimonial-section'>
       <motion.h2 className='text-center'
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}

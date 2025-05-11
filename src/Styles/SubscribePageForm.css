@@ -12,6 +12,7 @@
     height: clamp(100px, 2vw, 300px);
     height: 300px;
     margin-top: 10%;
+    margin-left: 5%;
     position: absolute;
 }
 .custom-bg{
@@ -37,11 +38,13 @@ font-size: clamp(1.125rem, 4vw, 3rem);
     font-size: clamp(1rem, 4vw, 1.5rem);
 }
 .custom-p{
-    font-size: clamp(0.6rem, 4vw, 1.125rem);
+    font-size: clamp(0.6rem, 4vw, 1rem);
 }
 .custom-button{
     background-color: #00C16E !important;
 }
 @media(max-width: 768px){
-    
+    .subscribe-img{
+        display: none;
+    }
 }

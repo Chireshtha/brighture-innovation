@@ -10,13 +10,7 @@ import aboutimg9 from '../../Images/image80.jpg'
 
 const AboutVission = () => {
     return (
-        <Container fluid className='text-center text-light d-flex justify-content-center align-items-center custom-about-container-3'>
-            {/* <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: false }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
-            > */}
+        <Container id='vision' fluid className='text-center text-light d-flex justify-content-center align-items-center custom-about-container-3'>
                 <Row className='align-items-center'>
                     <Col md={6} className='text-primary d-flex flex-column justify-content-center align-items-center'>
                         <h1 className='my-4 display-5 fw-semibold pt-4'>Our Vision</h1>
@@ -41,7 +35,6 @@ const AboutVission = () => {
                         </div>
                     </Col>
                 </Row>
-            {/* </motion.div> */}
         </Container>
     )
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import services from '../components/API/servicedata'
 import '../Styles/ServicePage.css'
 import { Card, Col, Container, Row } from 'react-bootstrap'
@@ -130,7 +129,6 @@ const ServicePage = () => {
                             </motion.div>
                         </Col>
                     ))}
-
                 </Row>
             </Container>
         </div>

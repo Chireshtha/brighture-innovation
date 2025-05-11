@@ -6,7 +6,7 @@ import '../../Styles/AboutPage.css'
 
 const AboutJourney = () => {
     return (
-        <Container fluid className='text-center text-light d-flex justify-content-center align-items-center p-0 m-0 custom-about-container-4'>
+        <Container id='ourstory' fluid className='text-center text-light d-flex justify-content-center align-items-center p-0 m-0 custom-about-container-4'>
             <div className='about-image'></div>
             <div className='about-content-container'>
                 <Row className='align-items-center'>

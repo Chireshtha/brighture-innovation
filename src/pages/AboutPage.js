@@ -9,6 +9,7 @@ import AboutMission from '../components/ui/AboutMission'
 import AboutVission from '../components/ui/AboutVission'
 import AboutJourney from '../components/ui/AboutJourney'
 import CoreValues from '../components/ui/CoreValues'
+import FAQ from '../components/ui/FAQ'
 
 const AboutPage = () => {
 
@@ -54,6 +55,8 @@ const AboutPage = () => {
 
       {/* Container 5 */}
       <CoreValues />
+
+      <FAQ />
 
     </div>
   )
