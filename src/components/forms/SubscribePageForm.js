@@ -25,7 +25,7 @@ const SubscribePageForm = () => {
     setLoading(true);
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/subscribe`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/subscribe/${id}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values),
