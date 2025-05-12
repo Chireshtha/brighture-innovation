@@ -25,7 +25,7 @@ const SubscribePageForm = () => {
     setErrors(validationErrors);
     if(Object.keys(validationErrors).length > 0)
     {
-    setLoading(false);
+    setLoading(true);
     return;
     }
 
