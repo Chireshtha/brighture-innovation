@@ -21,15 +21,8 @@ const SubscribePageForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setErrors(Validation(values));
     setLoading(true);
-
-    const validationErrors = Validation(values)
-    setErrors(validationErrors);
-    if(Object.keys(validationErrors).length > 0)
-    {
-    setLoading(false);
-    return;
-    }
 
     try {
       const response = await fetch(`${process.env.REACT_APP_API_URL}/subscribe`, {

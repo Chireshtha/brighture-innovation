@@ -21,16 +21,9 @@ const ContactForm = () => {
     }
 
     const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    const validationErrors = Validation(values)
-    setErrors(validationErrors);
-    if(Object.keys(validationErrors).length > 0)
-    {
-    setLoading(true);
-    return;
-    }
+        e.preventDefault();
+        setErrors(Validation(values));
+        setLoading(true);
 
         try{
             const response = await fetch(`${process.env.REACT_APP_API_URL}/messageme`, {
