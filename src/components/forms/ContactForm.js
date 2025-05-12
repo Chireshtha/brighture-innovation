@@ -22,6 +22,8 @@ const ContactForm = () => {
 
     const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+
     const validationErrors = Validation(values)
     setErrors(validationErrors);
     if(Object.keys(validationErrors).length > 0)
