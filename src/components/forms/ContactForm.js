@@ -21,9 +21,14 @@ const ContactForm = () => {
     }
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
-        setErrors(Validation(values));
-        setLoading(true);
+    e.preventDefault();
+    const validationErrors = Validation(values)
+    setErrors(validationErrors);
+    if(Object.keys(validationErrors).length > 0)
+    {
+    setLoading(false);
+    return;
+    }
 
         try{
             const response = await fetch(`${process.env.REACT_APP_API_URL}/messageme`, {
@@ -61,7 +66,7 @@ const ContactForm = () => {
                 </Col>
                 <Col md={4} className='text-light mx-auto my-5'>
                     <div className='contact-form'>
-                        <Form onSubmit={handleSubmit}>
+                        <Form onSubmit={handleSubmit} noValidate>
                             <Form.Group className='mb-3' controlId='formFirstName'>
                                 <Form.Label>First Name</Form.Label>
                                 <Form.Control type='text' name='first_name' value={values.first_name} onChange={handleChange} required placeholder='First Name' className='rounded-0' />

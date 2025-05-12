@@ -21,8 +21,13 @@ const SubscribePageForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setErrors(Validation(values));
-    setLoading(true);
+    const validationErrors = Validation(values)
+    setErrors(validationErrors);
+    if(Object.keys(validationErrors).length > 0)
+    {
+    setLoading(false);
+    return;
+    }
 
     try {
       const response = await fetch(`${process.env.REACT_APP_API_URL}/subscribe`, {
@@ -62,7 +67,7 @@ const SubscribePageForm = () => {
             <Col md={6} className='px-5 py-3 d-flex flex-column justify-content-center align-items-center'>
               <h6 className='fw-semibold custom-h6'>Subscribe Now</h6>
               <p className='text-muted custom-p'>Lets keep in touch! Please subscribe to our newsletter and stay updated</p>
-              <Form onSubmit={handleSubmit} >
+              <Form onSubmit={handleSubmit} noValidate>
                 <Form.Group>
                   <Form.Control placeholder='Enter Your Name' name='name' value={values.name} className='input-text' onChange={handleChange} required></Form.Control>
                   {errors.name && <span className='text-danger name-error'>{errors.name}</span>}
