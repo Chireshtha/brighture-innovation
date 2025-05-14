@@ -26,7 +26,7 @@ const ContactForm = () => {
         setLoading(true);
 
         try{
-            const response = await fetch(`${process.env.REACT_APP_API_URL}/messageme`, {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/messageme/:id`, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(values),
