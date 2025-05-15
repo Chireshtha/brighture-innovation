@@ -8,16 +8,17 @@ import Validation from './SubscribeValidation'
 
 const SubscribePageForm = () => {
   const [values, setValues] = useState({
-    name: "",
-    email: ""
+    name: '',
+    email: ''
   });
+  
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({})
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues((prev) => ({ ...prev, [name]: value }));
-  }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -63,12 +64,12 @@ const SubscribePageForm = () => {
               <h6 className='fw-semibold custom-h6'>Subscribe Now</h6>
               <p className='text-muted custom-p'>Lets keep in touch! Please subscribe to our newsletter and stay updated</p>
               <Form onSubmit={handleSubmit} noValidate>
-                <Form.Group>
-                  <Form.Control placeholder='Enter Your Name' name='name' value={values.name} className='input-text' onChange={handleChange} required></Form.Control>
+                <Form.Group controlId='formName'>
+                  <Form.Control type='text' placeholder='Enter Your Name' name='name' value={values.name} className='input-text' onChange={handleChange} required /> 
                   {errors.name && <span className='text-danger name-error'>{errors.name}</span>}
                 </Form.Group>
-                <Form.Group className='mt-3'>
-                  <Form.Control placeholder='Enter Your Email' name='email' value={values.email} className='input-text' onChange={handleChange} required ></Form.Control>
+                <Form.Group className='mt-3' controlId='formEmail'>
+                  <Form.Control type='email' placeholder='Enter Your Email' name='email' value={values.email} className='input-text' onChange={handleChange} required /> 
                   {errors.email && <span className='text-danger email-error'>{errors.email}</span>}
                 </Form.Group>
                 <Button type='submit' className='custom-button w-100 mt-3' disabled={loading}>{loading ? (<div className='d-flex justify-content-center align-items-center w-100'><Spinner animation='border' size='lg' /></div>) : (

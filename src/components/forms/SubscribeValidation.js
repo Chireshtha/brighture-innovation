@@ -1,19 +1,20 @@
-function Validation(values){
+function Validation(values) {
     let error = {}
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    if(values.name === ''){
+    
+    if (values.name === '') {
         error.name = "Name is required";
     }
-    else{
+    else {
         error.name = '';
     }
-    if(error.email === ''){
+    if (error.email === '') {
         error.email = "Email is required";
     }
-    else if(!emailPattern.test(values.email)){
+    else if (!emailPattern.test(values.email)) {
         error.email = "Email is invalid"
     }
-    else{
+    else {
         error.email = ''
     }
     return error;

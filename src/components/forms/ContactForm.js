@@ -16,8 +16,8 @@ const ContactForm = () => {
     const [errors, setErrors] = useState({})
 
     const handleChange = (e) => {
-        const {name, value} = e.target;
-        setValues((prev) => ({...prev, [name]: value}));
+        const { name, value } = e.target;
+        setValues((prev) => ({ ...prev, [name]: value }));
     }
 
     const handleSubmit = async (e) => {
@@ -25,25 +25,25 @@ const ContactForm = () => {
         setErrors(Validation(values));
         setLoading(true);
 
-        try{
+        try {
             const response = await fetch(`${process.env.REACT_APP_API_URL}/messageme`, {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(values),
             });
-            if (response.ok){
+            if (response.ok) {
                 alert("Message sent successfully");
-                setValues({first_name:'', last_name:'', email:'', ph_no:'', message:''});
+                setValues({ first_name: '', last_name: '', email: '', ph_no: '', message: '' });
             }
-            else{
+            else {
                 alert("Failed to send. Please try again");
             }
         }
-        catch(error){
+        catch (error) {
             console.error('Error:', error);
             alert('An error occurred. check console');
         }
-        finally{
+        finally {
             setLoading(false);
         }
     };
@@ -54,10 +54,10 @@ const ContactForm = () => {
         <Container id='help-center' fluid className='contact-container-1'>
             <Row>
                 <Col md={5} className='text-light mx-auto my-auto'>
-                <div>
-                <h1 className='display-3 contact-heading fw-bold'>HAVE YOUR SAY!</h1>
-                <p className='lead my-5 contact-para fw-bold'>Whether you have a <span className='span-color'>compliment /complaint / need more information</span> about our <span className='span-color'>services or your application</span>, get in touch with us and we’ll get back to you as soon as we can.</p>
-                </div>
+                    <div>
+                        <h1 className='display-3 contact-heading fw-bold'>HAVE YOUR SAY!</h1>
+                        <p className='lead my-5 contact-para fw-bold'>Whether you have a <span className='span-color'>compliment /complaint / need more information</span> about our <span className='span-color'>services or your application</span>, get in touch with us and we’ll get back to you as soon as we can.</p>
+                    </div>
                 </Col>
                 <Col md={4} className='text-light mx-auto my-5'>
                     <div className='contact-form'>
@@ -70,7 +70,7 @@ const ContactForm = () => {
                             <Form.Group className='mb-3' controlId='formLastName'>
                                 <Form.Label>Last Name</Form.Label>
                                 <Form.Control type='text' name='last_name' value={values.last_name} onChange={handleChange} required placeholder='Last Name' className='rounded-0' />
-                                { errors.last_name && <span className='text-danger name-error'>{errors.last_name}</span>}
+                                {errors.last_name && <span className='text-danger name-error'>{errors.last_name}</span>}
                             </Form.Group>
                             <Form.Group className='mb-3' controlId='formEmail'>
                                 <Form.Label>Email</Form.Label>
@@ -87,7 +87,7 @@ const ContactForm = () => {
                                 <Form.Control as='textarea' rows={5} name='message' value={values.message} onChange={handleChange} required placeholder='Write a message' className='rounded-0' />
                                 {errors.message && <span className='text-danger message-error'>{errors.message}</span>}
                             </Form.Group>
-                            <Button type='submit' className='w-100 mt-3 rounded-0 color-2' disabled={loading}>{loading?(<div className='d-flex justify-content-center align-items-center w-100'><Spinner animation='border' size='lg' /></div>):('Submit')}</Button>
+                            <Button type='submit' className='w-100 mt-3 rounded-0 color-2' disabled={loading}>{loading ? (<div className='d-flex justify-content-center align-items-center w-100'><Spinner animation='border' size='lg' /></div>) : ('Submit')}</Button>
                         </Form>
                     </div>
                 </Col>
