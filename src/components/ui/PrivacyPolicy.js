@@ -3,7 +3,7 @@ import PolicyData from '../API/PrivacyPolicyData'
 
 const PrivacyPolicy = () => {
     return (
-        <Container fluid id="privacy-policy my-5">
+        <Container fluid id="privacy-policy">
             <Row className="d-flex justify-content-center align-items-center">
                 {
                     PolicyData.map((data, index) => (
