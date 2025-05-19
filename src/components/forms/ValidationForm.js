@@ -30,14 +30,14 @@ function Validation(values){
         values.ph_no = "Phone number is required"
     }
     else{
-        values.ph_no = ""
+        error.ph_no = ""
     }
 
     if(values.message === ""){
-        values.message = "Message is required"
+        error.message = "Message is required"
     }
     else{
-        values.message = ""
+        error.message = ""
     }
     return error;
 }
