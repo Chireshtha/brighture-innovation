@@ -1,10 +1,56 @@
-import React from 'react'
-import { Button, Card, Col, Container, Form, ListGroup, Row } from 'react-bootstrap'
-import careerdata from '../components/API/careerdata'
+import React, { useState } from 'react'
+import { Button, Card, Col, Container, Form, ListGroup, Row, Spinner } from 'react-bootstrap'
+import careerdata from '../API/careerdata'
 import { useParams } from 'react-router-dom'
-import '../Styles/ApplyJobs.css'
+import '../../Styles/ApplyJobs.css'
+import Validation from './ApplicatioValidation'
 
 const ApplyJob = () => {
+    const [values, setValues] = useState({
+        fullname: '',
+        email: '',
+        ph_no: '',
+        upload_file: '',
+        message: ''
+    });
+
+    const [loading, setLoading] = useState(false);
+    const [errors, setErrors] = useState({})
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setValues((prev) => ({ ...prev, [name]: value }))
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setErrors(Validation(values))
+        setLoading(true)
+
+
+        try {
+            const response = await fetch('https://contact-backend-nput.onrender.com/applyjob', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(values)
+            })
+            if (response.ok) {
+                alert("Applied Successfully!");
+                setValues({ name: '', values: '' });
+            }
+            else {
+                alert('Failed to send. Please try again')
+            }
+        }
+        catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred. check console');
+        }
+        finally {
+            setLoading(false);
+        }
+    }
+
     const { slug } = useParams();
     const job = careerdata.careers.find(job => job.slug === slug);
     return (
@@ -44,28 +90,40 @@ const ApplyJob = () => {
                     <Card className='border-0 w-100'>
                         <Card.Body>
                             <Card.Title className='fs-1 text-center my-5 fw-bold'>Apply Now</Card.Title>
-                            <Form className='ms-5'>
+                            <Form className='ms-5' onSubmit={handleSubmit}>
                                 <Form.Group className='mb-3' controlId='formName'>
                                     <Form.Label>Full Name</Form.Label>
-                                    <Form.Control type='text' placeholder='Enter your name' />
+                                    <Form.Control type='text' name='fullname' value={values.fullname} placeholder='Enter your name' required onChange={handleChange} />
+                                    {errors.fullname && <span className='text-danger name-error'>{errors.fullname}</span>}
                                 </Form.Group>
+
                                 <Form.Group className='mb-3' controlId='formEmail'>
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type='email' placeholder='Enter your email' />
+                                    <Form.Control type='email' name='email' value={values.email} placeholder='Enter your email' required onChange={handleChange} />
+                                    {errors.email && <span className='text-danger email-error'>{errors.email}</span>}
                                 </Form.Group>
+
                                 <Form.Group className='mb-3' controlId='formPhone'>
                                     <Form.Label>Phone Number</Form.Label>
-                                    <Form.Control type='tel' placeholder='Enter your phone number' />
+                                    <Form.Control type='tel' name='ph_no' value={values.email} placeholder='Enter your phone number' required onChange={handleChange} />
+                                    {errors.ph_no && <span className='text-danger ph_no-error'>{errors.ph_no}</span>}
                                 </Form.Group>
+
                                 <Form.Group className='mb-3' controlId='formResume'>
                                     <Form.Label>Upload Resume</Form.Label>
-                                    <Form.Control type='file' className='w-100 custom-width' />
+                                    <Form.Control type='file' name='upload_file' value={values.upload_file} className='w-100 custom-width' required onChange={handleChange} />
+                                    {errors.upload_file && <span className='text-danger upload_file-error'>{errors.upload_file}</span>}
                                 </Form.Group>
+
                                 <Form.Group className='mb-3' controlId='formMessage'>
                                     <Form.Label>Message</Form.Label>
-                                    <Form.Control as='textarea' rows={5} placeholder='Write a message' />
+                                    <Form.Control as='textarea' name='message' value={values.message} rows={5} placeholder='Write a message' required onChange={handleChange} />
+                                    {errors.message && <span className='text-danger message-error'>{errors.message}</span>}
                                 </Form.Group>
-                                <Button variant='primary' type='submit' className='w-100 mt-3'>Submit</Button>
+
+                                <Button variant='primary' type='submit' className='w-100 mt-3' disabled={loading}>{loading ? (<div className='d-flex justify-content-center align-items-center w-100'><Spinner animation='border' size='lg' /></div>) : (
+                                    'Submit'
+                                )}</Button>
                             </Form>
                         </Card.Body>
                     </Card>

@@ -33,7 +33,7 @@ const SubscribePageForm = () => {
         body: JSON.stringify(values),
       });
       if (response.ok) {
-        alert("Message sent successfully");
+        alert("Thank you for subscribing!");
         setValues({ name: '', email: '' });
       }
       else {

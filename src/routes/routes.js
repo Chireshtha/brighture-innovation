@@ -6,7 +6,7 @@ import BlogPage from '../pages/BlogPage';
 import ContactPage from '../pages/ContactPage';
 import CareersPage from '../pages/CareersPage';
 import ServicePage from '../pages/ServicePage';
-import ApplyJob from '../pages/ApplyJob';
+import ApplyJob from '../components/forms/ApplyJob';
 import SubscribePageForm from '../components/forms/SubscribePageForm';
 import App from '../App';
 import ErrorPage from '../pages/ErrorPage';
