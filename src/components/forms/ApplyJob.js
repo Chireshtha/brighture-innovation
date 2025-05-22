@@ -39,7 +39,6 @@ const ApplyJob = () => {
         try {
             const response = await fetch('https://contact-backend-nput.onrender.com/applyjob', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
                 body: formData
             })
             if (response.ok) {
