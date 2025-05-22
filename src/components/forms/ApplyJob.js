@@ -24,6 +24,13 @@ const ApplyJob = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const formData = new formData();
+        formData.append('fullname', values.fullname);
+        formData.append('email', values.email);
+        formData.append('ph_no', values.ph_no);
+        formData.append('upload_file', values.upload_file);
+        formData.append('message', values.message);
+
         setErrors(Validation(values))
         setLoading(true)
 
@@ -32,11 +39,11 @@ const ApplyJob = () => {
             const response = await fetch('https://contact-backend-nput.onrender.com/applyjob', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(values)
+                body: formData
             })
             if (response.ok) {
                 alert("Applied Successfully!");
-                setValues({ name: '', values: '' });
+                setValues({ fullname: '', email: '', ph_no: '', upload_file: '', message: '' });
             }
             else {
                 alert('Failed to send. Please try again')
@@ -111,7 +118,7 @@ const ApplyJob = () => {
 
                                 <Form.Group className='mb-3' controlId='formResume'>
                                     <Form.Label>Upload Resume</Form.Label>
-                                    <Form.Control type='file' name='upload_file' value={values.upload_file} className='w-100 custom-width' required onChange={handleChange} />
+                                    <Form.Control type='file' name='upload_file' className='w-100 custom-width' required onChange={setValues({...values, upload_file:e.target.files[0]})} />
                                     {errors.upload_file && <span className='text-danger upload_file-error'>{errors.upload_file}</span>}
                                 </Form.Group>
 
