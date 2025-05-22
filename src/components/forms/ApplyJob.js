@@ -105,7 +105,7 @@ const ApplyJob = () => {
 
                                 <Form.Group className='mb-3' controlId='formPhone'>
                                     <Form.Label>Phone Number</Form.Label>
-                                    <Form.Control type='tel' name='ph_no' value={values.email} placeholder='Enter your phone number' required onChange={handleChange} />
+                                    <Form.Control type='tel' name='ph_no' value={values.ph_no} placeholder='Enter your phone number' required onChange={handleChange} />
                                     {errors.ph_no && <span className='text-danger ph_no-error'>{errors.ph_no}</span>}
                                 </Form.Group>
 
