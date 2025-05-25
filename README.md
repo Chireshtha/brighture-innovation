@@ -1,4 +1,4 @@
-# Brighture Innovations - Digital Marketing Website
+# Brighture Innovations - Digital Marketing Website 
 
 ## Project Overview
 Brighture Innovations is a full-stack digital marketing website designed to showcase services and allow potential clients to contact the company easily. Built with React.js on the frontend and Node.js/Express with MongoDB on the backend, this project demonstrates a complete web application with modern technologies.
