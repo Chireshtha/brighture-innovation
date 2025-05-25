@@ -25,7 +25,7 @@ Brighture Innovations is a full-stack digital marketing website designed to show
 ---
 
 ## Demo
-Live demo link: [https://chireshtha-brighture-innovation.netlify.app]
+Live demo link: [https://chireshtha-brighture-innovation.netlify.app](https://chireshtha-brighture-innovation.netlify.app)
 
 ---
 
