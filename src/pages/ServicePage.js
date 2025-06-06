@@ -55,7 +55,7 @@ const ServicePage = () => {
                     </Row>
                 </Container>
             </div>
-            <Container fluid className='service-container-2 py-4'>
+            <Container fluid className='service-container-2 py-4 px-0'>
                 <Row >
                     {service.keyBenefits.map((benefit, index) => (
                         <Col key={index} md={3}>
