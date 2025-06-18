@@ -134,4 +134,10 @@
     .service-container-1 h3{
         font-size: 18px;
     }
+    .service-content{
+        padding-left: 20px !important;
+    }
+    .benefit-box{
+        padding-bottom: 10px;
+    }
 }

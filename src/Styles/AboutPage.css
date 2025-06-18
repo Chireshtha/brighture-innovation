@@ -214,12 +214,8 @@ p {
 .custom-about-container-5 {
     width: var(--width);
     max-width: var(--max-width);
-    min-height: 40vh;
+    min-height: 45vh;
     height: auto;
-    position: relative;
-}
-.custom-height{
-    height: 30vh;
 }
 
 .col-item-1,
@@ -273,9 +269,7 @@ p {
         height: 150px;
         position: static;
     }
-    .custom-about-container-5{
-        min-height: 80vh;
-    }
+    
     .design-layout {
         width: 250px;
         height: 250px;

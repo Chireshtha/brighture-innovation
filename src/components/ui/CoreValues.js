@@ -15,7 +15,7 @@ const CoreValues = () => {
                 <Row className='align-items-center'>
                     <h1 className='display-5 fw-semibold text-primary d-flex flex-column justify-content-center align-items-center'>Our Core Values</h1>
                 </Row>
-                <Row className='align-items-center text-light custom-height'>
+                <Row className='align-items-center text-light'>
                     <Col xs={12} sm={6} md={3} className='d-flex flex-column justify-content-center align-items-center col-item-1'>
                         <h3 className='my-4 fs-3'>Innovation</h3>
                         <p className='text-start fs-6 fw-medium px-3'>We constantly seek creative and cutting-edge solutions</p>

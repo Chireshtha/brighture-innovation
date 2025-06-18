@@ -1,6 +1,6 @@
 .faqs-container{
     width: 100%;
-    height: auto;
+    min-height: 100vh;
     font-family: "Pathway Extreme", "Sans-serif";
 }
 .faq-card{
@@ -22,4 +22,8 @@ background: linear-gradient(rgba(55, 100, 205, 0.5),rgba(58, 128, 198, 0.5),rgba
 .faq-answer.show{
     padding-top: 10px;
     max-height: 100px;
+}
+@media (max-width: 768px){
+.faqs-container{
+ }
 }

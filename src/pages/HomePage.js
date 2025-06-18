@@ -18,7 +18,7 @@ const HomePage = () => {
           <p className='pt-2 fs-5'>We transform businesses with cutting-edge digital marketing, web development, and IT solutions.</p>
           <div className='mt-5'>
             <Button variant='light' className='me-3 text-dark fw-bold custom-btn-1' size='lg' as={Link} to="/blog">Discover More</Button>
-            <Button variant='outline-light custom-btn-2' size='lg' as={Link} to="/contact">Get Started</Button>
+            <Button variant='outline-light' className='fw-bold custom-btn-2' size='lg' as={Link} to="/contact">Get Started</Button>
           </div>
         </div>
       </Container>

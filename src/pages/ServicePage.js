@@ -21,7 +21,7 @@ const ServicePage = () => {
             <div className={`${service.containerClass}`} style={{ background: service.background }}>
                 <Container fluid className={`${service.titleClass} text-primary py-5 p-0 d-flex flex-column justify-content-center align-items-center service-container-1`}>
                     <Row className='align-items-center'>
-                        <Col md={6} className='d-flex flex-column'>
+                        <Col md={6} className='d-flex flex-column service-content'>
                             <motion.div
                                 initial={{ opacity: 0, x: -100 }}
                                 whileInView={{ opacity: 1, x: 0 }}
@@ -58,7 +58,7 @@ const ServicePage = () => {
             <Container fluid className='service-container-2 py-4 px-0'>
                 <Row >
                     {service.keyBenefits.map((benefit, index) => (
-                        <Col key={index} md={3}>
+                        <Col key={index} md={3} className='benefit-box'>
                             <Card fluid className='h-100 shadow-sm-md bg-danger key-benefit-card'>
                                 <Card.Body>
                                     <p className='text-light' key={index} ><span className='fs-5'>✅</span>  {benefit}</p>

@@ -14,6 +14,7 @@ const FAQ = () => {
     return (
         <Container fluid id='faqs' className='faqs-container pb-4'>
             <Row className='d-flex justify-content-center align-items-center px-4'>
+                <h2 className='display-5 fw-semibold text-primary text-center'>FAQS</h2>
                 {faqData.map((faqs, index) => (
                     <Col key={index} md={10}>
                         <Card className='my-3 ps-4 rounded-3 border-0 faq-card' onClick={()=>handleToggle(index)}>
