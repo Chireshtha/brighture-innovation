@@ -78,7 +78,8 @@ const ServicePage = () => {
                             initial={{ opacity: 0, y: -100 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: false }}
-                            transition={{ duration: 0.6, ease: "easeInOut" }}
+                            transition={{ duration: 0.6, ease:
+                                 "easeInOut" }}
                         >
                             <img className='img-fluid bg-sevice-img' src={serviceimg} alt='Service Img Loading...' />
                         </motion.div>
