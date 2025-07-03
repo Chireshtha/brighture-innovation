@@ -62,4 +62,18 @@ font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hel
     height: 550px;
     z-index: 0;
 }
+@media(max-width: 768px){
+    .contact-heading{
+        padding-top: 50px;
+    }
+}
  
+  @media (max-width: 420px)
+{
+    .contact-content{
+        margin-right: 50px;
+    }
+    .contact-address{
+        padding-top: 50px;
+    }
+}

@@ -289,5 +289,8 @@ p {
     .custom-about-container-4 p{
         font-size: 14px !important;
     } 
+    .custom-about-container-1{
+        padding-top: 30px;
+    }
 }
  

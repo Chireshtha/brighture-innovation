@@ -42,7 +42,7 @@ const ContactPage = () => {
               <hr />
               <address>
                 <a href='https://chireshtha-brighture-innovation.netlify.app/' className='text-decoration-none custom-color'><strong><FaGlobe size={24} className='pb-1' /> Website</strong> <br /> www.brinnov.com</a></address>
-              <div className='d-flex gap-3 mt-2 d-sm-flex'>
+              <div className='d-flex gap-3 mt-2 d-sm-flex pb-3'>
                 {
                   footerroutes.addressLink.map((link, index) => (
                     <a key={index} href={link.path} target='_blank' rel='noopener noreferrer' className='text-info fs-4'>{link.icon}</a>

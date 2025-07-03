@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import AboutPage from '../pages/AboutPage';
-import PortfolioPage from '../pages/PortfolioPage';
 import BlogPage from '../pages/BlogPage';
 import ContactPage from '../pages/ContactPage';
 import CareersPage from '../pages/CareersPage';
@@ -21,7 +20,6 @@ const routes = createBrowserRouter([
             { path: "/", element: <HomePage /> },
             { path: "/about", element: <AboutPage /> },
             { path: "/services/:slug", element: <ServicePage /> },
-            { path: "/portfolio", element: <PortfolioPage /> },
             { path: "/blog", element: <BlogPage /> },
             { path: "/career/", element: <CareersPage /> },
             { path: "/contact", element: <ContactPage /> },

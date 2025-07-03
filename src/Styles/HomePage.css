@@ -114,5 +114,15 @@
     }
     
   }
+  @media (max-width: 420px)
+  {
+    .custom-btn-1{
+        margin-bottom: 10px;
+    }
+    .custom-btn-2{
+        padding: 8px 28px !important;
+        margin-right: 18px !important;
+    }
+  }
  
    
